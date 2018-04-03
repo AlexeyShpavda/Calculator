@@ -51,12 +51,27 @@
             this.button_undoLastAction = new System.Windows.Forms.Button();
             this.textBox_dysplay = new System.Windows.Forms.TextBox();
             this.label_dysplay = new System.Windows.Forms.Label();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button_aSin = new System.Windows.Forms.Button();
+            this.button_sin = new System.Windows.Forms.Button();
+            this.button_aCos = new System.Windows.Forms.Button();
+            this.button_cos = new System.Windows.Forms.Button();
+            this.button_aTg = new System.Windows.Forms.Button();
+            this.button_tg = new System.Windows.Forms.Button();
+            this.button_aCtg = new System.Windows.Forms.Button();
+            this.button_ctg = new System.Windows.Forms.Button();
+            this.button_log = new System.Windows.Forms.Button();
+            this.button_sqrt = new System.Windows.Forms.Button();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_dot
             // 
             this.button_dot.BackColor = System.Drawing.Color.Gray;
             this.button_dot.FlatAppearance.BorderSize = 0;
+            this.button_dot.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_dot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_dot.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_dot.ForeColor = System.Drawing.Color.White;
@@ -71,6 +86,7 @@
             // 
             this.button_zero.BackColor = System.Drawing.Color.Gray;
             this.button_zero.FlatAppearance.BorderSize = 0;
+            this.button_zero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_zero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_zero.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_zero.ForeColor = System.Drawing.Color.White;
@@ -85,6 +101,7 @@
             // 
             this.button_equally.BackColor = System.Drawing.Color.Gray;
             this.button_equally.FlatAppearance.BorderSize = 0;
+            this.button_equally.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_equally.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_equally.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_equally.ForeColor = System.Drawing.Color.White;
@@ -99,6 +116,7 @@
             // 
             this.button_addition.BackColor = System.Drawing.Color.Gray;
             this.button_addition.FlatAppearance.BorderSize = 0;
+            this.button_addition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_addition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_addition.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_addition.ForeColor = System.Drawing.Color.White;
@@ -113,6 +131,7 @@
             // 
             this.button_subtraction.BackColor = System.Drawing.Color.Gray;
             this.button_subtraction.FlatAppearance.BorderSize = 0;
+            this.button_subtraction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_subtraction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_subtraction.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_subtraction.ForeColor = System.Drawing.Color.White;
@@ -127,6 +146,7 @@
             // 
             this.button_three.BackColor = System.Drawing.Color.Gray;
             this.button_three.FlatAppearance.BorderSize = 0;
+            this.button_three.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_three.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_three.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_three.ForeColor = System.Drawing.Color.White;
@@ -141,6 +161,7 @@
             // 
             this.button_two.BackColor = System.Drawing.Color.Gray;
             this.button_two.FlatAppearance.BorderSize = 0;
+            this.button_two.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_two.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_two.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_two.ForeColor = System.Drawing.Color.White;
@@ -155,6 +176,7 @@
             // 
             this.button_one.BackColor = System.Drawing.Color.Gray;
             this.button_one.FlatAppearance.BorderSize = 0;
+            this.button_one.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_one.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_one.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_one.ForeColor = System.Drawing.Color.White;
@@ -169,6 +191,7 @@
             // 
             this.button_multiplication.BackColor = System.Drawing.Color.Gray;
             this.button_multiplication.FlatAppearance.BorderSize = 0;
+            this.button_multiplication.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_multiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_multiplication.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_multiplication.ForeColor = System.Drawing.Color.White;
@@ -183,6 +206,7 @@
             // 
             this.button_six.BackColor = System.Drawing.Color.Gray;
             this.button_six.FlatAppearance.BorderSize = 0;
+            this.button_six.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_six.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_six.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_six.ForeColor = System.Drawing.Color.White;
@@ -197,6 +221,7 @@
             // 
             this.button_five.BackColor = System.Drawing.Color.Gray;
             this.button_five.FlatAppearance.BorderSize = 0;
+            this.button_five.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_five.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_five.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_five.ForeColor = System.Drawing.Color.White;
@@ -211,6 +236,7 @@
             // 
             this.button_four.BackColor = System.Drawing.Color.Gray;
             this.button_four.FlatAppearance.BorderSize = 0;
+            this.button_four.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_four.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_four.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_four.ForeColor = System.Drawing.Color.White;
@@ -225,6 +251,7 @@
             // 
             this.button_division.BackColor = System.Drawing.Color.Gray;
             this.button_division.FlatAppearance.BorderSize = 0;
+            this.button_division.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_division.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_division.ForeColor = System.Drawing.Color.White;
@@ -239,6 +266,7 @@
             // 
             this.button_nine.BackColor = System.Drawing.Color.Gray;
             this.button_nine.FlatAppearance.BorderSize = 0;
+            this.button_nine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_nine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_nine.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_nine.ForeColor = System.Drawing.Color.White;
@@ -253,6 +281,7 @@
             // 
             this.button_eight.BackColor = System.Drawing.Color.Gray;
             this.button_eight.FlatAppearance.BorderSize = 0;
+            this.button_eight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_eight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_eight.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_eight.ForeColor = System.Drawing.Color.White;
@@ -267,6 +296,7 @@
             // 
             this.button_seven.BackColor = System.Drawing.Color.Gray;
             this.button_seven.FlatAppearance.BorderSize = 0;
+            this.button_seven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button_seven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_seven.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_seven.ForeColor = System.Drawing.Color.White;
@@ -337,10 +367,10 @@
             // 
             this.textBox_dysplay.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_dysplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox_dysplay.Location = new System.Drawing.Point(2, 79);
+            this.textBox_dysplay.Location = new System.Drawing.Point(2, 68);
             this.textBox_dysplay.Multiline = true;
             this.textBox_dysplay.Name = "textBox_dysplay";
-            this.textBox_dysplay.Size = new System.Drawing.Size(378, 55);
+            this.textBox_dysplay.Size = new System.Drawing.Size(378, 66);
             this.textBox_dysplay.TabIndex = 20;
             // 
             // label_dysplay
@@ -348,18 +378,202 @@
             this.label_dysplay.AutoSize = true;
             this.label_dysplay.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_dysplay.ForeColor = System.Drawing.Color.White;
-            this.label_dysplay.Location = new System.Drawing.Point(12, 45);
+            this.label_dysplay.Location = new System.Drawing.Point(12, 34);
             this.label_dysplay.Name = "label_dysplay";
-            this.label_dysplay.Size = new System.Drawing.Size(54, 31);
+            this.label_dysplay.Size = new System.Drawing.Size(0, 31);
             this.label_dysplay.TabIndex = 21;
-            this.label_dysplay.Text = "label1";
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(635, 28);
+            this.menuStrip.TabIndex = 22;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // standardToolStripMenuItem
+            // 
+            this.standardToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.scientificToolStripMenuItem});
+            this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.standardToolStripMenuItem.Text = "Standard";
+            // 
+            // scientificToolStripMenuItem
+            // 
+            this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.scientificToolStripMenuItem.Text = "Scientific";
+            // 
+            // button_aSin
+            // 
+            this.button_aSin.BackColor = System.Drawing.Color.Gray;
+            this.button_aSin.FlatAppearance.BorderSize = 0;
+            this.button_aSin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_aSin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_aSin.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_aSin.ForeColor = System.Drawing.Color.White;
+            this.button_aSin.Location = new System.Drawing.Point(513, 211);
+            this.button_aSin.Name = "button_aSin";
+            this.button_aSin.Size = new System.Drawing.Size(93, 59);
+            this.button_aSin.TabIndex = 30;
+            this.button_aSin.Text = "aSin";
+            this.button_aSin.UseVisualStyleBackColor = false;
+            // 
+            // button_sin
+            // 
+            this.button_sin.BackColor = System.Drawing.Color.Gray;
+            this.button_sin.FlatAppearance.BorderSize = 0;
+            this.button_sin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_sin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_sin.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_sin.ForeColor = System.Drawing.Color.White;
+            this.button_sin.Location = new System.Drawing.Point(418, 211);
+            this.button_sin.Name = "button_sin";
+            this.button_sin.Size = new System.Drawing.Size(93, 59);
+            this.button_sin.TabIndex = 29;
+            this.button_sin.Text = "Sin";
+            this.button_sin.UseVisualStyleBackColor = false;
+            // 
+            // button_aCos
+            // 
+            this.button_aCos.BackColor = System.Drawing.Color.Gray;
+            this.button_aCos.FlatAppearance.BorderSize = 0;
+            this.button_aCos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_aCos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_aCos.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_aCos.ForeColor = System.Drawing.Color.White;
+            this.button_aCos.Location = new System.Drawing.Point(513, 271);
+            this.button_aCos.Name = "button_aCos";
+            this.button_aCos.Size = new System.Drawing.Size(93, 59);
+            this.button_aCos.TabIndex = 28;
+            this.button_aCos.Text = "aCos";
+            this.button_aCos.UseVisualStyleBackColor = false;
+            // 
+            // button_cos
+            // 
+            this.button_cos.BackColor = System.Drawing.Color.Gray;
+            this.button_cos.FlatAppearance.BorderSize = 0;
+            this.button_cos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_cos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_cos.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cos.ForeColor = System.Drawing.Color.White;
+            this.button_cos.Location = new System.Drawing.Point(418, 271);
+            this.button_cos.Name = "button_cos";
+            this.button_cos.Size = new System.Drawing.Size(93, 59);
+            this.button_cos.TabIndex = 27;
+            this.button_cos.Text = "Cos";
+            this.button_cos.UseVisualStyleBackColor = false;
+            // 
+            // button_aTg
+            // 
+            this.button_aTg.BackColor = System.Drawing.Color.Gray;
+            this.button_aTg.FlatAppearance.BorderSize = 0;
+            this.button_aTg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_aTg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_aTg.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_aTg.ForeColor = System.Drawing.Color.White;
+            this.button_aTg.Location = new System.Drawing.Point(513, 331);
+            this.button_aTg.Name = "button_aTg";
+            this.button_aTg.Size = new System.Drawing.Size(93, 59);
+            this.button_aTg.TabIndex = 26;
+            this.button_aTg.Text = "aTg";
+            this.button_aTg.UseVisualStyleBackColor = false;
+            // 
+            // button_tg
+            // 
+            this.button_tg.BackColor = System.Drawing.Color.Gray;
+            this.button_tg.FlatAppearance.BorderSize = 0;
+            this.button_tg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_tg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_tg.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_tg.ForeColor = System.Drawing.Color.White;
+            this.button_tg.Location = new System.Drawing.Point(418, 331);
+            this.button_tg.Name = "button_tg";
+            this.button_tg.Size = new System.Drawing.Size(93, 59);
+            this.button_tg.TabIndex = 25;
+            this.button_tg.Text = "Tg";
+            this.button_tg.UseVisualStyleBackColor = false;
+            // 
+            // button_aCtg
+            // 
+            this.button_aCtg.BackColor = System.Drawing.Color.Gray;
+            this.button_aCtg.FlatAppearance.BorderSize = 0;
+            this.button_aCtg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_aCtg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_aCtg.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_aCtg.ForeColor = System.Drawing.Color.White;
+            this.button_aCtg.Location = new System.Drawing.Point(513, 392);
+            this.button_aCtg.Name = "button_aCtg";
+            this.button_aCtg.Size = new System.Drawing.Size(93, 59);
+            this.button_aCtg.TabIndex = 24;
+            this.button_aCtg.Text = "aCtg";
+            this.button_aCtg.UseVisualStyleBackColor = false;
+            // 
+            // button_ctg
+            // 
+            this.button_ctg.BackColor = System.Drawing.Color.Gray;
+            this.button_ctg.FlatAppearance.BorderSize = 0;
+            this.button_ctg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_ctg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ctg.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ctg.ForeColor = System.Drawing.Color.White;
+            this.button_ctg.Location = new System.Drawing.Point(418, 392);
+            this.button_ctg.Name = "button_ctg";
+            this.button_ctg.Size = new System.Drawing.Size(93, 59);
+            this.button_ctg.TabIndex = 23;
+            this.button_ctg.Text = "Ctg";
+            this.button_ctg.UseVisualStyleBackColor = false;
+            // 
+            // button_log
+            // 
+            this.button_log.BackColor = System.Drawing.Color.Gray;
+            this.button_log.FlatAppearance.BorderSize = 0;
+            this.button_log.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_log.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_log.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_log.ForeColor = System.Drawing.Color.White;
+            this.button_log.Location = new System.Drawing.Point(513, 150);
+            this.button_log.Name = "button_log";
+            this.button_log.Size = new System.Drawing.Size(93, 59);
+            this.button_log.TabIndex = 32;
+            this.button_log.Text = "Log";
+            this.button_log.UseVisualStyleBackColor = false;
+            // 
+            // button_sqrt
+            // 
+            this.button_sqrt.BackColor = System.Drawing.Color.Gray;
+            this.button_sqrt.FlatAppearance.BorderSize = 0;
+            this.button_sqrt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button_sqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_sqrt.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_sqrt.ForeColor = System.Drawing.Color.White;
+            this.button_sqrt.Location = new System.Drawing.Point(418, 150);
+            this.button_sqrt.Name = "button_sqrt";
+            this.button_sqrt.Size = new System.Drawing.Size(93, 59);
+            this.button_sqrt.TabIndex = 31;
+            this.button_sqrt.Text = "Sqrt";
+            this.button_sqrt.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(382, 453);
+            this.ClientSize = new System.Drawing.Size(635, 453);
+            this.Controls.Add(this.button_log);
+            this.Controls.Add(this.button_sqrt);
+            this.Controls.Add(this.button_aSin);
+            this.Controls.Add(this.button_sin);
+            this.Controls.Add(this.button_aCos);
+            this.Controls.Add(this.button_cos);
+            this.Controls.Add(this.button_aTg);
+            this.Controls.Add(this.button_tg);
+            this.Controls.Add(this.button_aCtg);
+            this.Controls.Add(this.button_ctg);
             this.Controls.Add(this.label_dysplay);
             this.Controls.Add(this.textBox_dysplay);
             this.Controls.Add(this.button_changeOfSign);
@@ -382,11 +596,15 @@
             this.Controls.Add(this.button_equally);
             this.Controls.Add(this.button_zero);
             this.Controls.Add(this.button_dot);
+            this.Controls.Add(this.menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,6 +634,19 @@
         private System.Windows.Forms.Button button_undoLastAction;
         private System.Windows.Forms.TextBox textBox_dysplay;
         private System.Windows.Forms.Label label_dysplay;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scientificToolStripMenuItem;
+        private System.Windows.Forms.Button button_aSin;
+        private System.Windows.Forms.Button button_sin;
+        private System.Windows.Forms.Button button_aCos;
+        private System.Windows.Forms.Button button_cos;
+        private System.Windows.Forms.Button button_aTg;
+        private System.Windows.Forms.Button button_tg;
+        private System.Windows.Forms.Button button_aCtg;
+        private System.Windows.Forms.Button button_ctg;
+        private System.Windows.Forms.Button button_log;
+        private System.Windows.Forms.Button button_sqrt;
     }
 }
 
