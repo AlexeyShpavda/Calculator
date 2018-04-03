@@ -311,7 +311,7 @@
             this.button_reset.FlatAppearance.BorderSize = 0;
             this.button_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_reset.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reset.ForeColor = System.Drawing.Color.White;
+            this.button_reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button_reset.Location = new System.Drawing.Point(97, 150);
             this.button_reset.Name = "button_reset";
             this.button_reset.Size = new System.Drawing.Size(93, 59);
@@ -325,7 +325,7 @@
             this.button_undoLastAction.FlatAppearance.BorderSize = 0;
             this.button_undoLastAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_undoLastAction.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_undoLastAction.ForeColor = System.Drawing.Color.White;
+            this.button_undoLastAction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button_undoLastAction.Location = new System.Drawing.Point(2, 150);
             this.button_undoLastAction.Name = "button_undoLastAction";
             this.button_undoLastAction.Size = new System.Drawing.Size(93, 59);
