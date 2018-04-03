@@ -16,5 +16,23 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 303;
+            textBox_dysplay.Width = 284;
+        }
+
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 473;
+            textBox_dysplay.Width = 454;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            this.Width = 303;
+            textBox_dysplay.Width = 284;
+        }
     }
 }
