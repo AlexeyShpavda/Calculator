@@ -67,7 +67,6 @@ namespace Calculator
         private void button_undoLastAction_Click(object sender, EventArgs e)
         {
             textBox_dysplay.Text = "0";
-            label_dysplay.Text = "";
         }
 
         private void button_reset_Click(object sender, EventArgs e)
