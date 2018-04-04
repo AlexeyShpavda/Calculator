@@ -132,5 +132,37 @@ namespace Calculator
             sq = Math.Sqrt(sq);
             textBox_dysplay.Text = Convert.ToString(sq);
         }
+
+        private void button_sin_Click(object sender, EventArgs e)
+        {
+            double sinus = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("sin" + "(" + (textBox_dysplay.Text) + ")");
+            sinus = Math.Sin(sinus);
+            textBox_dysplay.Text = Convert.ToString(sinus);
+        }
+
+        private void button_cos_Click(object sender, EventArgs e)
+        {
+            double cosine = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("cos" + "(" + (textBox_dysplay.Text) + ")");
+            cosine = Math.Cos(cosine);
+            textBox_dysplay.Text = Convert.ToString(cosine);
+        }
+
+        private void button_tg_Click(object sender, EventArgs e)
+        {
+            double tangent = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("tg" + "(" + (textBox_dysplay.Text) + ")");
+            tangent = Math.Tan(tangent);
+            textBox_dysplay.Text = Convert.ToString(tangent);
+        }
+
+        private void button_ctg_Click(object sender, EventArgs e)
+        {
+            double cotangent = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("ctg" + "(" + (textBox_dysplay.Text) + ")");
+            cotangent = 1f / Math.Tan(cotangent);
+            textBox_dysplay.Text = Convert.ToString(cotangent);
+        }
     }
 }
