@@ -130,7 +130,7 @@
             this.button_addition.TabIndex = 3;
             this.button_addition.Text = "+";
             this.button_addition.UseVisualStyleBackColor = false;
-            this.button_addition.Click += new System.EventHandler(this.arithmetic_operation);
+            this.button_addition.Click += new System.EventHandler(this.arithmetic_operation_Click);
             // 
             // button_subtraction
             // 
@@ -146,7 +146,7 @@
             this.button_subtraction.TabIndex = 7;
             this.button_subtraction.Text = "-";
             this.button_subtraction.UseVisualStyleBackColor = false;
-            this.button_subtraction.Click += new System.EventHandler(this.arithmetic_operation);
+            this.button_subtraction.Click += new System.EventHandler(this.arithmetic_operation_Click);
             // 
             // button_three
             // 
@@ -210,7 +210,7 @@
             this.button_multiplication.TabIndex = 11;
             this.button_multiplication.Text = "×";
             this.button_multiplication.UseVisualStyleBackColor = false;
-            this.button_multiplication.Click += new System.EventHandler(this.arithmetic_operation);
+            this.button_multiplication.Click += new System.EventHandler(this.arithmetic_operation_Click);
             // 
             // button_six
             // 
@@ -274,7 +274,7 @@
             this.button_division.TabIndex = 15;
             this.button_division.Text = "÷";
             this.button_division.UseVisualStyleBackColor = false;
-            this.button_division.Click += new System.EventHandler(this.arithmetic_operation);
+            this.button_division.Click += new System.EventHandler(this.arithmetic_operation_Click);
             // 
             // button_nine
             // 
@@ -431,14 +431,14 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.standardToolStripMenuItem.Text = "Standard";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 

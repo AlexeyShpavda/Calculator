@@ -43,24 +43,27 @@ namespace Calculator
             {
                 textBox_dysplay.Text = "";
             }
-            Button num = (Button)sender;
-            if (num.Text == ".")
+            Button numberOnButton = (Button)sender;
+            if (numberOnButton.Text == ".")
             {
                 if (!textBox_dysplay.Text.Contains("."))
                 {
                     if (textBox_dysplay.Text != "")
                     {
-                        textBox_dysplay.Text += num.Text;
+                        textBox_dysplay.Text += numberOnButton.Text;
+                        label_dysplay.Text += numberOnButton.Text;
                     }
                     else
                     {
-                        textBox_dysplay.Text += "0" + num.Text;
+                        textBox_dysplay.Text += "0" + numberOnButton.Text;
+                        label_dysplay.Text += "0" + numberOnButton.Text;
                     }
                 }
             }
             else
             {
-                textBox_dysplay.Text += num.Text;
+                textBox_dysplay.Text += numberOnButton.Text;
+                label_dysplay.Text +=" " + numberOnButton.Text;
             }
         }
 
@@ -88,13 +91,14 @@ namespace Calculator
             }
         }
 
-        private void arithmetic_operation(object sender, EventArgs e)
+        private void arithmetic_operation_Click(object sender, EventArgs e)
         {
-            Button num = (Button)sender;
-            operation = num.Text;
+            Button operationOnButton = (Button)sender;
+            operation = operationOnButton.Text;
             results = Double.Parse(textBox_dysplay.Text);
             textBox_dysplay.Text = "";
-            label_dysplay.Text = Convert.ToString(results) + " " + operation;
+            // label_dysplay.Text += Convert.ToString(results) + " " + operation;
+            label_dysplay.Text += " " + operation;
         }
 
         private void button_equally_Click(object sender, EventArgs e)
@@ -102,11 +106,12 @@ namespace Calculator
             label_dysplay.Text = "";
             switch (operation)
             {
-                case "+": textBox_dysplay.Text = (results + Double.Parse(textBox_dysplay.Text)).ToString();
-                        break;
+                case "+":
+                    textBox_dysplay.Text = (results + Double.Parse(textBox_dysplay.Text)).ToString();
+                    break;
                 case "-":
                     textBox_dysplay.Text = (results - Double.Parse(textBox_dysplay.Text)).ToString();
-                    break;
+                        break;
                 case "×":
                     textBox_dysplay.Text = (results * Double.Parse(textBox_dysplay.Text)).ToString();
                     break;
