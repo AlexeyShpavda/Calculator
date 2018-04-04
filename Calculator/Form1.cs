@@ -37,20 +37,25 @@ namespace Calculator
 
         Double results = 0;
         String operation = "";
-        bool enter_value = false;
         private void button_click(object sender, EventArgs e)
         {
-            if ((textBox_dysplay.Text == "0") || (enter_value)) 
+            if ((textBox_dysplay.Text == "0")) 
             {
                 textBox_dysplay.Text = "";
             }
-            enter_value = false;
             Button num = (Button)sender;
             if (num.Text == ".")
             {
                 if (!textBox_dysplay.Text.Contains("."))
                 {
-                    textBox_dysplay.Text += num.Text;
+                    if (textBox_dysplay.Text != "")
+                    {
+                        textBox_dysplay.Text += num.Text;
+                    }
+                    else
+                    {
+                        textBox_dysplay.Text += "0" + num.Text;
+                    }
                 }
             }
             else
@@ -163,6 +168,38 @@ namespace Calculator
             label_dysplay.Text = Convert.ToString("ctg" + "(" + (textBox_dysplay.Text) + ")");
             cotangent = 1f / Math.Tan(cotangent);
             textBox_dysplay.Text = Convert.ToString(cotangent);
+        }
+
+        private void button_aSin_Click(object sender, EventArgs e)
+        {
+            double arcsine = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("asin" + "(" + (textBox_dysplay.Text) + ")");
+            arcsine = Math.Asin(arcsine);
+            textBox_dysplay.Text = Convert.ToString(arcsine);
+        }
+
+        private void button_aCos_Click(object sender, EventArgs e)
+        {
+            double arccosine = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("acos" + "(" + (textBox_dysplay.Text) + ")");
+            arccosine = Math.Acos(arccosine);
+            textBox_dysplay.Text = Convert.ToString(arccosine);
+        }
+
+        private void button_aTg_Click(object sender, EventArgs e)
+        {
+            double arctangent = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("atg" + "(" + (textBox_dysplay.Text) + ")");
+            arctangent = Math.Atan(arctangent);
+            textBox_dysplay.Text = Convert.ToString(arctangent);
+        }
+
+        private void button_aCtg_Click(object sender, EventArgs e)
+        {
+            double arccotangent = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("actg" + "(" + (textBox_dysplay.Text) + ")");
+            arccotangent = Math.Atan(arccotangent);
+            textBox_dysplay.Text = Convert.ToString(arccotangent);
         }
     }
 }

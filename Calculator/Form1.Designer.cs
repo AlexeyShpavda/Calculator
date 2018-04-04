@@ -456,6 +456,7 @@
             this.button_aSin.TabIndex = 30;
             this.button_aSin.Text = "aSin";
             this.button_aSin.UseVisualStyleBackColor = false;
+            this.button_aSin.Click += new System.EventHandler(this.button_aSin_Click);
             // 
             // button_sin
             // 
@@ -487,6 +488,7 @@
             this.button_aCos.TabIndex = 28;
             this.button_aCos.Text = "aCos";
             this.button_aCos.UseVisualStyleBackColor = false;
+            this.button_aCos.Click += new System.EventHandler(this.button_aCos_Click);
             // 
             // button_cos
             // 
@@ -518,6 +520,7 @@
             this.button_aTg.TabIndex = 26;
             this.button_aTg.Text = "aTg";
             this.button_aTg.UseVisualStyleBackColor = false;
+            this.button_aTg.Click += new System.EventHandler(this.button_aTg_Click);
             // 
             // button_tg
             // 
@@ -549,6 +552,7 @@
             this.button_aCtg.TabIndex = 24;
             this.button_aCtg.Text = "aCtg";
             this.button_aCtg.UseVisualStyleBackColor = false;
+            this.button_aCtg.Click += new System.EventHandler(this.button_aCtg_Click);
             // 
             // button_ctg
             // 
