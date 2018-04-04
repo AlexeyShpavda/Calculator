@@ -45,7 +45,7 @@
             this.button_nine = new System.Windows.Forms.Button();
             this.button_eight = new System.Windows.Forms.Button();
             this.button_seven = new System.Windows.Forms.Button();
-            this.button_changeOfSign = new System.Windows.Forms.Button();
+            this.button_Pi = new System.Windows.Forms.Button();
             this.button_deleteLastCharacter = new System.Windows.Forms.Button();
             this.button_reset = new System.Windows.Forms.Button();
             this.button_undoLastAction = new System.Windows.Forms.Button();
@@ -82,6 +82,7 @@
             this.button_dot.TabIndex = 0;
             this.button_dot.Text = ".";
             this.button_dot.UseVisualStyleBackColor = false;
+            this.button_dot.Click += new System.EventHandler(this.button_click);
             // 
             // button_zero
             // 
@@ -97,6 +98,7 @@
             this.button_zero.TabIndex = 1;
             this.button_zero.Text = "0";
             this.button_zero.UseVisualStyleBackColor = false;
+            this.button_zero.Click += new System.EventHandler(this.button_click);
             // 
             // button_equally
             // 
@@ -112,6 +114,7 @@
             this.button_equally.TabIndex = 2;
             this.button_equally.Text = "=";
             this.button_equally.UseVisualStyleBackColor = false;
+            this.button_equally.Click += new System.EventHandler(this.button_equally_Click);
             // 
             // button_addition
             // 
@@ -127,6 +130,7 @@
             this.button_addition.TabIndex = 3;
             this.button_addition.Text = "+";
             this.button_addition.UseVisualStyleBackColor = false;
+            this.button_addition.Click += new System.EventHandler(this.arithmetic_operation);
             // 
             // button_subtraction
             // 
@@ -142,6 +146,7 @@
             this.button_subtraction.TabIndex = 7;
             this.button_subtraction.Text = "-";
             this.button_subtraction.UseVisualStyleBackColor = false;
+            this.button_subtraction.Click += new System.EventHandler(this.arithmetic_operation);
             // 
             // button_three
             // 
@@ -157,6 +162,7 @@
             this.button_three.TabIndex = 6;
             this.button_three.Text = "3";
             this.button_three.UseVisualStyleBackColor = false;
+            this.button_three.Click += new System.EventHandler(this.button_click);
             // 
             // button_two
             // 
@@ -172,6 +178,7 @@
             this.button_two.TabIndex = 5;
             this.button_two.Text = "2";
             this.button_two.UseVisualStyleBackColor = false;
+            this.button_two.Click += new System.EventHandler(this.button_click);
             // 
             // button_one
             // 
@@ -187,6 +194,7 @@
             this.button_one.TabIndex = 4;
             this.button_one.Text = "1";
             this.button_one.UseVisualStyleBackColor = false;
+            this.button_one.Click += new System.EventHandler(this.button_click);
             // 
             // button_multiplication
             // 
@@ -202,6 +210,7 @@
             this.button_multiplication.TabIndex = 11;
             this.button_multiplication.Text = "×";
             this.button_multiplication.UseVisualStyleBackColor = false;
+            this.button_multiplication.Click += new System.EventHandler(this.arithmetic_operation);
             // 
             // button_six
             // 
@@ -217,6 +226,7 @@
             this.button_six.TabIndex = 10;
             this.button_six.Text = "6";
             this.button_six.UseVisualStyleBackColor = false;
+            this.button_six.Click += new System.EventHandler(this.button_click);
             // 
             // button_five
             // 
@@ -232,6 +242,7 @@
             this.button_five.TabIndex = 9;
             this.button_five.Text = "5";
             this.button_five.UseVisualStyleBackColor = false;
+            this.button_five.Click += new System.EventHandler(this.button_click);
             // 
             // button_four
             // 
@@ -247,6 +258,7 @@
             this.button_four.TabIndex = 8;
             this.button_four.Text = "4";
             this.button_four.UseVisualStyleBackColor = false;
+            this.button_four.Click += new System.EventHandler(this.button_click);
             // 
             // button_division
             // 
@@ -262,6 +274,7 @@
             this.button_division.TabIndex = 15;
             this.button_division.Text = "÷";
             this.button_division.UseVisualStyleBackColor = false;
+            this.button_division.Click += new System.EventHandler(this.arithmetic_operation);
             // 
             // button_nine
             // 
@@ -277,6 +290,7 @@
             this.button_nine.TabIndex = 14;
             this.button_nine.Text = "9";
             this.button_nine.UseVisualStyleBackColor = false;
+            this.button_nine.Click += new System.EventHandler(this.button_click);
             // 
             // button_eight
             // 
@@ -292,6 +306,7 @@
             this.button_eight.TabIndex = 13;
             this.button_eight.Text = "8";
             this.button_eight.UseVisualStyleBackColor = false;
+            this.button_eight.Click += new System.EventHandler(this.button_click);
             // 
             // button_seven
             // 
@@ -307,20 +322,22 @@
             this.button_seven.TabIndex = 12;
             this.button_seven.Text = "7";
             this.button_seven.UseVisualStyleBackColor = false;
+            this.button_seven.Click += new System.EventHandler(this.button_click);
             // 
-            // button_changeOfSign
+            // button_Pi
             // 
-            this.button_changeOfSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_changeOfSign.FlatAppearance.BorderSize = 0;
-            this.button_changeOfSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_changeOfSign.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_changeOfSign.ForeColor = System.Drawing.Color.White;
-            this.button_changeOfSign.Location = new System.Drawing.Point(287, 150);
-            this.button_changeOfSign.Name = "button_changeOfSign";
-            this.button_changeOfSign.Size = new System.Drawing.Size(93, 59);
-            this.button_changeOfSign.TabIndex = 19;
-            this.button_changeOfSign.Text = "+/-";
-            this.button_changeOfSign.UseVisualStyleBackColor = false;
+            this.button_Pi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_Pi.FlatAppearance.BorderSize = 0;
+            this.button_Pi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Pi.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Pi.ForeColor = System.Drawing.Color.White;
+            this.button_Pi.Location = new System.Drawing.Point(287, 150);
+            this.button_Pi.Name = "button_Pi";
+            this.button_Pi.Size = new System.Drawing.Size(93, 59);
+            this.button_Pi.TabIndex = 19;
+            this.button_Pi.Text = "Pi";
+            this.button_Pi.UseVisualStyleBackColor = false;
+            this.button_Pi.Click += new System.EventHandler(this.button_Pi_Click);
             // 
             // button_deleteLastCharacter
             // 
@@ -335,6 +352,7 @@
             this.button_deleteLastCharacter.TabIndex = 18;
             this.button_deleteLastCharacter.Text = "←";
             this.button_deleteLastCharacter.UseVisualStyleBackColor = false;
+            this.button_deleteLastCharacter.Click += new System.EventHandler(this.button_deleteLastCharacter_Click);
             // 
             // button_reset
             // 
@@ -349,6 +367,7 @@
             this.button_reset.TabIndex = 17;
             this.button_reset.Text = "C";
             this.button_reset.UseVisualStyleBackColor = false;
+            this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
             // 
             // button_undoLastAction
             // 
@@ -363,17 +382,21 @@
             this.button_undoLastAction.TabIndex = 16;
             this.button_undoLastAction.Text = "CE";
             this.button_undoLastAction.UseVisualStyleBackColor = false;
+            this.button_undoLastAction.Click += new System.EventHandler(this.button_undoLastAction_Click);
             // 
             // textBox_dysplay
             // 
             this.textBox_dysplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBox_dysplay.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_dysplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox_dysplay.ForeColor = System.Drawing.Color.White;
             this.textBox_dysplay.Location = new System.Drawing.Point(2, 68);
             this.textBox_dysplay.Multiline = true;
             this.textBox_dysplay.Name = "textBox_dysplay";
             this.textBox_dysplay.Size = new System.Drawing.Size(378, 66);
             this.textBox_dysplay.TabIndex = 20;
+            this.textBox_dysplay.Text = "0";
+            this.textBox_dysplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_dysplay.Click += new System.EventHandler(this.button_click);
             // 
             // label_dysplay
             // 
@@ -392,7 +415,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(382, 28);
+            this.menuStrip.Size = new System.Drawing.Size(611, 28);
             this.menuStrip.TabIndex = 22;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -408,14 +431,14 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.standardToolStripMenuItem.Text = "Standard";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
@@ -553,6 +576,7 @@
             this.button_log.TabIndex = 32;
             this.button_log.Text = "Log";
             this.button_log.UseVisualStyleBackColor = false;
+            this.button_log.Click += new System.EventHandler(this.button_log_Click);
             // 
             // button_sqrt
             // 
@@ -568,13 +592,14 @@
             this.button_sqrt.TabIndex = 31;
             this.button_sqrt.Text = "Sqrt";
             this.button_sqrt.UseVisualStyleBackColor = false;
+            this.button_sqrt.Click += new System.EventHandler(this.button_sqrt_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(382, 453);
+            this.ClientSize = new System.Drawing.Size(611, 453);
             this.Controls.Add(this.button_log);
             this.Controls.Add(this.button_sqrt);
             this.Controls.Add(this.button_aSin);
@@ -587,7 +612,7 @@
             this.Controls.Add(this.button_ctg);
             this.Controls.Add(this.label_dysplay);
             this.Controls.Add(this.textBox_dysplay);
-            this.Controls.Add(this.button_changeOfSign);
+            this.Controls.Add(this.button_Pi);
             this.Controls.Add(this.button_deleteLastCharacter);
             this.Controls.Add(this.button_reset);
             this.Controls.Add(this.button_undoLastAction);
@@ -640,7 +665,7 @@
         private System.Windows.Forms.Button button_nine;
         private System.Windows.Forms.Button button_eight;
         private System.Windows.Forms.Button button_seven;
-        private System.Windows.Forms.Button button_changeOfSign;
+        private System.Windows.Forms.Button button_Pi;
         private System.Windows.Forms.Button button_deleteLastCharacter;
         private System.Windows.Forms.Button button_reset;
         private System.Windows.Forms.Button button_undoLastAction;

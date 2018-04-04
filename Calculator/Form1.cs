@@ -34,5 +34,103 @@ namespace Calculator
             this.Width = 303;
             textBox_dysplay.Width = 284;
         }
+
+        Double results = 0;
+        String operation = "";
+        bool enter_value = false;
+        private void button_click(object sender, EventArgs e)
+        {
+            if ((textBox_dysplay.Text == "0") || (enter_value)) 
+            {
+                textBox_dysplay.Text = "";
+            }
+            enter_value = false;
+            Button num = (Button)sender;
+            if (num.Text == ".")
+            {
+                if (!textBox_dysplay.Text.Contains("."))
+                {
+                    textBox_dysplay.Text += num.Text;
+                }
+            }
+            else
+            {
+                textBox_dysplay.Text += num.Text;
+            }
+        }
+
+        private void button_undoLastAction_Click(object sender, EventArgs e)
+        {
+            textBox_dysplay.Text = "0";
+            label_dysplay.Text = "";
+        }
+
+        private void button_reset_Click(object sender, EventArgs e)
+        {
+            textBox_dysplay.Text = "0";
+            label_dysplay.Text = "";
+        }
+
+        private void button_deleteLastCharacter_Click(object sender, EventArgs e)
+        {
+            if (textBox_dysplay.Text.Length > 0)
+            {
+                textBox_dysplay.Text = textBox_dysplay.Text.Remove
+                    (textBox_dysplay.Text.Length - 1, 1); 
+            }
+            if (textBox_dysplay.Text == "")
+            {
+                textBox_dysplay.Text = "0";
+            }
+        }
+
+        private void arithmetic_operation(object sender, EventArgs e)
+        {
+            Button num = (Button)sender;
+            operation = num.Text;
+            results = Double.Parse(textBox_dysplay.Text);
+            textBox_dysplay.Text = "";
+            label_dysplay.Text = Convert.ToString(results) + " " + operation;
+        }
+
+        private void button_equally_Click(object sender, EventArgs e)
+        {
+            label_dysplay.Text = "";
+            switch (operation)
+            {
+                case "+": textBox_dysplay.Text = (results + Double.Parse(textBox_dysplay.Text)).ToString();
+                        break;
+                case "-":
+                    textBox_dysplay.Text = (results - Double.Parse(textBox_dysplay.Text)).ToString();
+                    break;
+                case "×":
+                    textBox_dysplay.Text = (results * Double.Parse(textBox_dysplay.Text)).ToString();
+                    break;
+                case "÷":
+                    textBox_dysplay.Text = (results / Double.Parse(textBox_dysplay.Text)).ToString();
+                    break;
+            }
+        }
+
+        private void button_Pi_Click(object sender, EventArgs e)
+        {
+            textBox_dysplay.Text = "3.14159265358979";
+        }
+
+        private void button_log_Click(object sender, EventArgs e)
+        {
+            double log = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("log" + "(" + (textBox_dysplay.Text) + ")");
+            log = Math.Log10(log);
+            textBox_dysplay.Text = Convert.ToString(log);
+        }
+
+        private void button_sqrt_Click(object sender, EventArgs e)
+        {
+            double sq = Double.Parse(textBox_dysplay.Text);
+            label_dysplay.Text = Convert.ToString("sqrt" + "(" + (textBox_dysplay.Text) + ")");
+            sq = Math.Sqrt(sq);
+            textBox_dysplay.Text = Convert.ToString(sq);
+        }
     }
 }
